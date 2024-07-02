@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: #333;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.love, .yes, .no {
+    padding-top: 15%;
+}
+
+.love span {
+    color: red;
+}
+
+h2 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+}
+
+#no {
+    color: red;
+    background: #eee;
+    margin-right: 50px;
+}
+
+#yes {
+    color: green;
+    background: #eee;
+}
+
+.yes img {
+    height: 30px;
+    width: 30px;
+    animation: image 4s linear infinite;
+}
+
+@keyframes image {
+    0% { transform: scale(.5); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(.5); }
+}
+
+/* Style for framed photo */
+.framed-photo {
+    width: 800px;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 48px;
+    }
+    
+    a {
+        font-size: 20px;
+        padding: 5px 8px;
+    }
+    
+    .yes, .no, .love {
+        padding-top: 20%;
+    }
+    
+    .framed-photo {
+        width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 36px;
+    }
+    
+    a {
+        font-size: 18px;
+        padding: 5px 6px;
+    }
+    
+    .yes, .no, .love {
+        padding-top: 25%;
+    }
+    
+    .framed-photo {
+        width: 400px;
+    }
+}
